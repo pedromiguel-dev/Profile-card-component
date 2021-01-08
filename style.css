@@ -3,19 +3,19 @@
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
 }
-
+body{
+    background-image:url('images/bg-pattern-bottom.svg'), url('images/bg-pattern-top.svg') ;
+    background-position: bottom -60vh right -8vw,  top -60vh left -9vw;
+    background-repeat: no-repeat;
+    background-size: 770px;
+    background-color:hsl(185, 75%, 39%) ;
+}
 .unico{
-    background-color:hsl(227, 10%, 46%) ;
     width: 100vw;
     height: 100vh;
 }
 
 .centralizar{
-    background-image:url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg') ;
-    background-position: bottom right,  top left;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-color:hsl(185, 75%, 39%) ;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -31,9 +31,17 @@
     height:  374px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0px 0px 30px hsl(229, 23%, 23%);
+    box-shadow: 0px 0px 20px hsl(229, 23%, 23%);
+    transition: all 0.2s ease-in-out;
     
 }
+
+.card:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 40px hsl(229, 23%, 23%);
+}
+
 
 .bc{
     display: flex;
