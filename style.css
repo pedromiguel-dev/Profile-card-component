@@ -9,6 +9,7 @@ body{
     background-repeat: no-repeat;
     background-size: 770px;
     background-color:hsl(185, 75%, 39%) ;
+    overflow-x: hidden;
 }
 .unico{
     width: 100vw;
