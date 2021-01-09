@@ -4,12 +4,28 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 body{
+    transition: all 0.3s ease-in-out;
     background-image:url('images/bg-pattern-bottom.svg'), url('images/bg-pattern-top.svg') ;
     background-position: bottom -60vh right -8vw,  top -60vh left -9vw;
     background-repeat: no-repeat;
     background-size: 770px;
     background-color:hsl(185, 75%, 39%) ;
     overflow-x: hidden;
+}
+@media screen and (max-width: 375px){
+    body{
+    transition: all 0.3s ease-in-out;
+    background-image:url('images/bg-pattern-bottom.svg'), url('images/bg-pattern-top.svg') ;
+    background-position: bottom -18vh right -18vw ,  top -18vh left -18vw;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-color:hsl(185, 75%, 39%) ;
+    overflow-x: hidden;
+    }
+    .card{
+        transition: all 0.3s ease-in-out;
+        transform: scale(0.9);
+    }
 }
 .unico{
     width: 100vw;
@@ -118,6 +134,10 @@ body{
     font-size: 14px;
     font-weight: 400;
     margin-top: 10px;
+}
+
+.attribution{
+    margin-top: -15px ;
 }
 
 
